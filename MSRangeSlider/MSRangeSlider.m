@@ -33,7 +33,6 @@ static CGFloat const kThumbViewEdgeInset = -7.5f;
         self.thumbLayer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent: 0.2].CGColor;
         self.thumbLayer.shadowRadius = 2;
         self.thumbLayer.shadowOffset = CGSizeMake(1, 1);
-        self.thumbLayer.shadowOpacity = 0.2f;
         [self.layer addSublayer:self.thumbLayer];
         self.gestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:nil action:nil];
         [self addGestureRecognizer:self.gestureRecognizer];
