@@ -28,8 +28,6 @@ static CGFloat const kThumbViewEdgeInset = -7.5f;
     if (self) {
         self.thumbLayer = [CALayer layer];
 
-        self.thumbLayer.borderColor = [[UIColor lightGrayColor] colorWithAlphaComponent:.4].CGColor;
-        self.thumbLayer.borderWidth = .5;
         self.thumbLayer.cornerRadius = kRangeSliderDimension / 2;
         self.thumbLayer.backgroundColor = [UIColor whiteColor].CGColor;
         self.thumbLayer.shadowColor = [UIColor blackColor].CGColor;
