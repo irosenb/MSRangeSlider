@@ -30,8 +30,7 @@ static CGFloat const kThumbViewEdgeInset = -7.5f;
 
         self.thumbLayer.cornerRadius = kRangeSliderDimension / 2;
         self.thumbLayer.backgroundColor = [UIColor whiteColor].CGColor;
-        self.thumbLayer.shadowColor = [UIColor blackColor].CGColor;
-        self.thumbLayer.shadowOffset = CGSizeMake(0.0, 3.0);
+        self.thumbLayer.shadowColor = [[UIColor blackColor] colorWithAlphaComponent: 0.5].CGColor;
         self.thumbLayer.shadowRadius = 2;
         self.thumbLayer.shadowOpacity = 0.3f;
         [self.layer addSublayer:self.thumbLayer];
